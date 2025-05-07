@@ -1,0 +1,165 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #f0f0f0;
+  background-color: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ddd;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  font-weight: bold;
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ffea00;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url('https://www.wallpapertip.com/wmimgs/21-217425_starry-sky-background-space-hd.jpg'); /* Fondo con estrellas */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  border-radius: 5px;
+  border: 2px solid #555;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #333;
+  color: #eee;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  border-color: #ffd700;
+  background-color: #444;
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+
+.card {
+  padding: 3em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suavizado de transición */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de ampliación suave */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Efecto de sombra más intensa */
+}
+
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #444;
+  border-color: #ffd700;
+  transform: scale(1.05); /* Efecto de ampliación suave en botones */
+}
+
+.pagination button:disabled {
+  background-color: #555;
+  color: #999;
+  cursor: not-allowed;
+  border-color: #777;
+}
+
+/* HOVER SOLO EN ELEMENTOS ESPECÍFICOS: */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  background-color: #222; /* Cambio de fondo en hover */
+}
+
+.navbar a {
+  font-weight: bold;
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ffea00;
+  text-decoration: underline;
+}
+
+/* Restablecer el hover global que aplicaba en toda la página (ya no se usa) */
+*, *::before, *::after {
+  transition: none; /* Desactivar la transición global */
+}
